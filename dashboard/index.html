@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="icon" type="image/png" href="src/images/favicon.ico"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/css/uikit.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link href="src/icons/css/fontawesome.css" rel="stylesheet">
+  <link href="src/icons/css/brands.css" rel="stylesheet">
+  <link href="src/icons/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/css/loader.css">
+  <script src="src/js/uikit.min.js"></script>
+  <script src="src/js/uikit-icons.min.js"></script>
+  <script src="src/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="src/js/script.js"></script>
+
+</head>
+<body>
+  <div class="preloader">
+    <span class="h1" data-content="authomemate">authomemate</span>
+  </div>
+  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; border-bottom:1px solid #E6EAEA;">
+      <!-- NAVBAR LEFT -->
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+          <li><a href="/" ></a></li>
+          <div class="uk-width-auto"><a href="index.html" ><img   width="280" height="auto" style="margin-top:10px;" src="src/images/logo.png"></div></a>
+        </ul>
+
+
+      </div>
+      <!-- NAVBAR CENTER -->
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+
+        </ul>
+      </div>
+      <!-- NAVBAR RIGHT -->
+      <div class="uk-navbar-right">
+        <div class="uk-width-auto"><img class="uk-border-circle" width="40" height="40" src="src/images/profile.png"></div>
+        <ul class="uk-navbar-nav">
+          <li> <a href=""> Marygold </a></li>
+          <li><a href="pages/login.html" class="logout">Sign Out</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class=" div-centre">
+    <div class="toggles">
+      <span class="toggle-sub room-toggle atv" > Rooms </span>
+      <span class="toggle-sub sensors-toggle" > Sensors</span>
+    </div>
+    <div class="divider">
+      <p id="page-title">Hello, Marygold</p>
+      <span id="refresh"><i style="margin-top:6px;" class="fas fa-redo"></i></span>
+      <span id="refreshing"><i style="margin-top:6px;" class="fas fa-redo"></i></span>
+    </div>
+
+    <div class="cards" id="rooms">
+      <div class="card-row">
+        <div class="single-card" id="bedroom1">
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/bed.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style="background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+            <span id="icon-fan"  uk-tooltip="title: Fan Off" style="background-color:gray!important"><i class="fas fa-fan" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Bedroom 1</span><br>
+            <span  id="temperature"> Checking</span><br>
+            <span id="detection">Room Empty</span>
+          </div>
+        </div>
+        <div class="single-card" id="bedroom2" >
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/bed.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style="background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+            <span id="icon-fan"  uk-tooltip="title: Fan Off" style="background-color:gray!important"><i class="fas fa-fan" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Bedroom 2</span><br>
+            <span id="temperature"> <em>Not Active</em></span><br>
+            <span id="detection"> </span>
+          </div>
+        </div>
+        <div class="single-card" id="living">
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/living.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style="background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+            <span id="icon-fan"  uk-tooltip="title: Fan Off" style="background-color:gray!important"><i class="fas fa-fan" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Living Room</span><br>
+            <span id="temperature"> <em>Not Active</em></span><br>
+            <span id="detection"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="card-row">
+        <div class="single-card" id="dining" >
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/dining.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style="background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+            <span id="icon-fan"  uk-tooltip="title: Fan Off" style="background-color:gray!important"><i class="fas fa-fan" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Dining</span><br>
+            <span id="temperature"> <em>Not Active</em></span><br>
+            <span id="detection"> </span>
+          </div>
+        </div>
+        <div class="single-card" id="kitchen" >
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/kitchen.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style="background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+            <span id="icon-fan"  uk-tooltip="title: Fan Off" style="background-color:gray!important"><i class="fas fa-fan" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Kitchen</span><br>
+            <span id="temperature"> <em>Not Active</em></span><br>
+            <span id="detection"> </span>
+          </div>
+        </div>
+        <div class="single-card" id="garage">
+          <div class="uk-width-auto">
+            <img  width="100%" height="30" style="display:block" src="src/images/garage.jpg">
+            <span id="icon-heat" uk-tooltip="title: Light Off" style=" left:50%; background-color:gray!important"><i class="fas fa-lightbulb" style="margin-top:7px"></i> </span>
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> Garage</span><br>
+            <span id="temperature"> <em>Not Active</em></span><br>
+            <span id="detection"> </span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="cards" id="sensors" style="display:none;">
+      <div class="card-row">
+        <div class="single-card" id="pir">
+          <div class="uk-width-auto">
+            <img  width="100%" height="30%" style="display:block" src="src/images/pir.jpg">
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> PIR</span><br>
+            <span id="temperature"> Proximity Infrared Sensor<br><em>checking</em> </span><br>
+          </div>
+        </div>
+        <div class="single-card" id="dht22">
+          <div class="uk-width-auto">
+            <img  width="100%" height="30%" style="display:block" src="src/images/heat.jpg">
+          </div>
+          <div class="uk-width-auto text-content">
+            <span id="card-title"> DHT22</span><br>
+            <span id="temperature"> Temperatute and Humidity Sensor <br><em>checking</em></span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">&nbsp;</div>
+
+  </div>
+  <a id="button"><i class="fas fa-angle-double-up"></i></a>
+
+</body>
+</html>

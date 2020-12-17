@@ -1,0 +1,339 @@
+@font-face {
+  font-family: karla;
+  src: url('../fonts/karla.ttf');
+}
+
+@font-face {
+  font-family: psans400;
+  src: url('../fonts/psans 400.ttf');
+}
+
+@font-face {
+  font-family: psans700;
+  src: url('../fonts/psans 700.ttf');
+}
+
+body,.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle{
+  font-family: karla!important;
+  font-size: 1rem;
+}
+
+.uk-sticky, .uk-sticky-fixed
+{
+  width: 100%!important;
+  z-index: 9999;
+}
+
+.uk-navbar-nav>li>a
+{
+  color:#00393F;
+  font-family: psans700!important;
+
+}
+
+.logout
+{
+  color:white!important;
+  display: block;
+  background-color: #22b573;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#refresh
+{
+  position: absolute;
+  display:inline-block;
+  color:white;
+  width:1.8rem;
+  height: 1.8rem;
+  left:50%;
+  top:100%;
+  margin: 40px -28px 0px -28px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: crimson;
+  cursor: pointer;
+  -webkit-box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+#refresh:hover
+{
+   background-color: #22b573;
+   animation: spin-animation 2.5s infinite;
+}
+
+#refreshing
+{
+  position: absolute;
+  display:none;
+  color:white;
+  width:1.8rem;
+  height: 1.8rem;
+  left:50%;
+  top:100%;
+  margin: 40px -28px 0px -28px;
+  padding: 8px;
+  border-radius: 50%;
+   background-color: #22b573;
+  cursor: pointer;
+  -webkit-box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  transition: all 0.3s ease-in-out;
+  animation: spin-animation 0.1s infinite;
+}
+
+.uk-tooltip
+{
+  border-radius: 25px;
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+.logout:hover
+{
+  background-color: #333;
+}
+.uk-subnav, .uk-subnav-pill
+{
+  margin:auto!important;
+}
+
+.div-centre{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-align: center!important;
+}
+
+
+
+.card-content
+{
+  text-align: center;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:inline-flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  padding: 70px;
+  position: relative;
+  width: 70%;
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+#page-title{
+  font-size: 3rem;
+  font-family: psans700;
+  color:black;
+
+}
+
+
+.toggle-sub{
+  display:inline-block;
+  color:white;
+  width:7rem;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: : 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+  -webkit-box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:   1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-row{
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap:24px;
+  grid-row-gap: 24px;
+  width: 100%;
+}
+
+.single-card{
+  height:20em;
+  line-height: normal;
+  width:20em;
+  margin: 0em 3em 2em 0em;
+  background-color:white;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:inline-flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+.single-card:hover{
+  cursor:pointer;
+  box-shadow: 2px 4px 13px rgba(0,0,0,0.3);
+
+}
+
+.text-content{
+  text-align: left;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+#card-title{
+  font-family: psans700!important;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+#icon-heat{
+  text-align: center;
+  color: white;
+  font-size: 1.6em;
+  position: absolute;
+  top:60%;
+  left:60%;
+  margin-left: -25px;
+  margin-top: -30px;
+  z-index: 6000;
+  background-color: #F1B731;
+  height: 2.5rem!important;
+  width: 2.5rem!important;
+  border-radius: 50%;
+  -webkit-box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+#icon-fan{
+  text-align: center;
+  color: white;
+  font-size: 1.6em;
+  position: absolute;
+  top:60%;
+  left:45%;
+  margin-left: -25px;
+  margin-top: -30px;
+  z-index: 6000;
+  background-color: #085B92;
+  height: 2.5rem!important;
+  width: 2.5rem!important;
+  border-radius: 50%;
+  -webkit-box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  1px 5px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+
+.divider{
+  height:2em;
+  margin: 2em 0em 6em 0em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:inline-flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+}
+
+.toggles
+{
+  margin: 2em 0em 2em 0em;
+}
+.toggle-sub:hover
+{
+  box-shadow: 2px 4px 13px rgba(0,0,0,0.3);
+  opacity: 0.8;
+}
+
+em{
+  color:lightgray!important;
+}
+
+.atv
+{
+  background-color: #00393F;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
+#button {
+  display: inline-block;
+  background-color: #22b573;
+  width: 60px;
+  font-size: 2em;
+  color:white;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.fa-angle-double-up
+{
+  margin-top: 13px;
+}
+#button::after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
