@@ -1,0 +1,34 @@
+{
+    "pi":{
+        "name": "WoT", 
+        "description": "Implementing WoT", 
+        "port": 3000, 
+        "sensors":{
+            "pir":{
+                "name": "Passive Infrared Sensor",
+                "description": "A passive infrared sensor for detecting objects", 
+                "value": false, 
+                "gpio": 17
+            }, 
+            "temperature":{
+                "name": "Temperature sensor", 
+                "description": "A temperature sensor",
+                "unit": "celsius",
+                "value": 0,
+                "gpio": 4
+            }
+        },
+        "actuators":{
+            "led":{
+                "name": "LED",
+                "description": "LED for actuation",
+                "gpio": 27
+             }, 
+            "fan":{
+                "name": "fan",
+                 "description": "fan for actuation",
+                "gpio": 18
+            }
+        }
+    }
+}
